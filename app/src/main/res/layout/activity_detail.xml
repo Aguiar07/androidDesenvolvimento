@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".filmes.presentation.view.DetailActivity">
+
+    <ImageView
+        android:id="@+id/imgDetailBack"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/backdrop"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/txtDetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Inside Out 2"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnDetailFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        tools:text="Favoritar" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgDetailPoster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/poster" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="#66FFFFFF"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="18dp"
+                tools:text="Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone." />
+
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>
